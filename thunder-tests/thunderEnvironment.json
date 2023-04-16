@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "d0100092-8630-4b02-a218-993172ec5b15",
+    "name": "bills-back-env",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2023-04-06T12:01:14.730Z",
+    "modified": "2023-04-06T12:01:14.730Z",
+    "data": [
+      {
+        "name": "URL",
+        "value": "http://127.0.0.1:3000"
+      },
+      {
+        "name": "bill_id",
+        "value": "64350f8b7b5a0b13f76d05ac"
+      },
+      {
+        "name": "user_id",
+        "value": "6435220067ffc7f20a45bcd1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "_id": "295e044f-42a0-4637-9ed9-0c8d70c5eddc",
+    "colId": "86368a7c-554a-4430-9d78-9bb02d577768",
+    "containerId": "",
+    "name": "bills",
+    "url": "{{URL}}/bills/{id}",
+    "method": "DELETE",
+    "sortNum": 35000,
+    "created": "2023-04-06T11:55:46.604Z",
+    "modified": "2023-04-06T13:05:45.006Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "{{bill_id}}",
+        "isPath": true
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "e8b0c2f1-3698-4fde-a21f-f5118be24d2c",
+    "colId": "86368a7c-554a-4430-9d78-9bb02d577768",
+    "containerId": "",
+    "name": "bills",
+    "url": "{{URL}}/bills",
+    "method": "GET",
+    "sortNum": 7500,
+    "created": "2023-04-06T11:59:02.439Z",
+    "modified": "2023-04-06T12:02:54.314Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "7ab1ee58-362b-4f14-83a0-ca7a255d8a1b",
+    "colId": "86368a7c-554a-4430-9d78-9bb02d577768",
+    "containerId": "",
+    "name": "bill",
+    "url": "{{URL}}/bills/limited/{param}",
+    "method": "GET",
+    "sortNum": 3750,
+    "created": "2023-04-06T12:04:03.789Z",
+    "modified": "2023-04-13T14:03:49.848Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "param",
+        "value": "2",
+        "isPath": true
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "a3ae712c-4c44-4fd0-9981-a497ceb5a02d",
+    "colId": "86368a7c-554a-4430-9d78-9bb02d577768",
+    "containerId": "",
+    "name": "bills",
+    "url": "{{URL}}/bills",
+    "method": "POST",
+    "sortNum": 25000,
+    "created": "2023-04-06T12:05:58.562Z",
+    "modified": "2023-04-11T07:41:11.898Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"billnum\": 209345600,\n  \"description\": \"THunder test\",\n  \"date\": \"02/12/2022\",\n  \"client\": {\n    \"idclient\": 1,\n    \"firstName\": \"Marc\",\n    \"lastName\": \"Scout\",\n    \"companyName\": \"THunder test\"\n  },\n  \"prestations\": [\n    {\n      \"description\": \"THunder test\",\n      \"qty\": 2,\n      \"price\": 450\n    },\n    {\n      \"description\": \"Création d’un site Wordpress\",\n      \"qty\": 5,\n      \"price\": 450\n    },\n    {\n      \"description\": \"Hébergement annuel\",\n      \"qty\": 1,\n      \"price\": 250\n    },\n    {\n      \"description\": \"Hébergement annuel\",\n      \"qty\": 1,\n      \"price\": 250\n    },\n    {\n      \"description\": \"Hébergement annuel\",\n      \"qty\": 1,\n      \"price\": 250\n    },\n    {\n      \"description\": \"Hébergement annuel\",\n      \"qty\": 1,\n      \"price\": 250\n    }\n  ],\n  \"discount\": 0,\n  \"paid\": 0,\n  \"totalHT\": 3400,\n  \"tva\": 20,\n  \"totalTTC\": 4080\n}",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json._id",
+        "action": "setto",
+        "value": "{{bill_id}}"
+      }
+    ]
+  },
+  {
+    "_id": "3085616c-2d95-4bc7-ac32-4f9ec6bfd77d",
+    "colId": "86368a7c-554a-4430-9d78-9bb02d577768",
+    "containerId": "",
+    "name": "bills",
+    "url": "{{URL}}/bills/{id}",
+    "method": "PATCH",
+    "sortNum": 45000,
+    "created": "2023-04-06T12:07:00.777Z",
+    "modified": "2023-04-06T13:34:27.833Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "{{bill_id}}",
+        "isPath": true
+      }
+    ],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"billnum\": \"209345600\",\n  \"date\": \"31/12/2028\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "b6f2b253-58a8-4f64-8e9c-2eec73e234ac",
+    "colId": "86368a7c-554a-4430-9d78-9bb02d577768",
+    "containerId": "",
+    "name": "users",
+    "url": "{{URL}}/users/{id}",
+    "method": "DELETE",
+    "sortNum": 75000,
+    "created": "2023-04-11T08:42:00.385Z",
+    "modified": "2023-04-11T09:03:30.734Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "id",
+        "value": "{{user_id}}",
+        "isPath": true
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "3628b1ac-fd92-4378-abdb-7b8de325c6de",
+    "colId": "86368a7c-554a-4430-9d78-9bb02d577768",
+    "containerId": "",
+    "name": "users",
+    "url": "{{URL}}/users",
+    "method": "GET",
+    "sortNum": 67500,
+    "created": "2023-04-11T08:53:15.830Z",
+    "modified": "2023-04-13T13:58:16.553Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "89d86d00-f712-46d1-ba35-26b43bc63449",
+    "colId": "86368a7c-554a-4430-9d78-9bb02d577768",
+    "containerId": "",
+    "name": "users",
+    "url": "{{URL}}/users",
+    "method": "POST",
+    "sortNum": 70000,
+    "created": "2023-04-11T08:55:40.300Z",
+    "modified": "2023-04-11T09:01:52.990Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"firstName\": \"Second\",\n  \"lastName\": \"Test\",\n  \"enterprise\": \"Testing Corp\",\n  \"regDate\": \"02/04/08\"\n}",
+      "form": []
+    },
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json._id",
+        "action": "setto",
+        "value": "{{user_id}}"
+      }
+    ]
+  },
+  {
+    "_id": "ceb7d4a6-9d17-4e10-9e11-968cdec28571",
+    "colId": "86368a7c-554a-4430-9d78-9bb02d577768",
+    "containerId": "",
+    "name": "users",
+    "url": "{{URL}}/users/{_id}",
+    "method": "GET",
+    "sortNum": 72500,
+    "created": "2023-04-11T08:59:02.447Z",
+    "modified": "2023-04-11T08:59:02.447Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "_id",
+        "value": "6435204cef47fa81eb755855",
+        "isPath": true
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "237f494e-b34f-43a8-8e9f-096d2f1e806d",
+    "colId": "86368a7c-554a-4430-9d78-9bb02d577768",
+    "containerId": "",
+    "name": "bills limit ",
+    "url": "{{URL}}/bills/{limit}",
+    "method": "GET",
+    "sortNum": 65000,
+    "created": "2023-04-11T12:36:07.634Z",
+    "modified": "2023-04-11T13:28:33.139Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "limit",
+        "value": "2",
+        "isPath": true
+      }
+    ],
+    "tests": []
+  }
+]

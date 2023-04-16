@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "91879dd3-ada6-4c12-afc5-6867b61ce4b2",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{URL}}/bills/{params}",
+    "url": "{{URL}}/bills/{params}",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-04-13T13:58:50.140Z",
+    "modified": "2023-04-13T13:58:50.140Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "params",
+        "value": "5",
+        "isPath": true
+      }
+    ],
+    "tests": []
+  }
+]
